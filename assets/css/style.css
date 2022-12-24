@@ -1,0 +1,819 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap');
+
+/* font family: Open+Sans
+font-family: 'Open Sans', sans-serif; */
+
+body{
+    background-color: rgb(248, 248, 248);
+    font-family: 'Open Sans', sans-serif;
+}
+/*.bodycontactos{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 2fr; 
+    grid-template-rows: 1fr 2fr 1fr 1fr;
+    grid-template-areas:    "nav nav nav nav"
+                            "main main main main"
+                            "aside aside aside aside"
+                            "footer footer footer footer";
+}*/
+
+/* NAV Y FOOTER CON FLEX */
+
+
+.navbargf{
+    background-color: black;
+    color: deepskyblue;
+    height: 48px;
+    padding: 10px 12px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.imgnav{
+    height: 48px;
+    padding: 2px;
+    width: 48px;
+}
+
+.titulologo{
+    font-size: 36px;
+    padding: 5px;
+}
+
+.checkbox, .iconos{
+    width: 24px; height: 24px;
+    position: absolute;
+    top: 10px; right: 12px;
+    cursor: pointer;
+}
+
+.iconos{
+    pointer-events: none;
+    font-size: 24px;
+    color: deepskyblue;
+}
+
+.fi-br-cross{
+    display: none;
+}
+
+.checkbox{
+    opacity: 0;
+}
+.checkbox:checked ~ .fi-br-menu-burger{
+    display: none;
+}
+.checkbox:checked ~ .fi-br-cross{
+    display: block;
+}
+.menugf{
+    border: 1px solid black;
+    width: 250px;
+    position: absolute;
+    top: -165px; right:0px;
+    z-index: -1;
+    transition: 250ms;
+}
+.menugf{
+    list-style: none;
+}
+
+.menugf > li a{
+    color: black;
+    background-color: deepskyblue;
+    text-decoration: none;
+    display: block;
+    padding: 12px;
+}
+
+.menugf > li a:hover{
+    background-color: black;
+    color: deepskyblue;
+}
+
+.checkbox:checked ~ .menugf{
+    display: block;
+    top: 48px;
+    z-index: 1;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    background: black;
+    height: 300px;
+    padding: 1px;
+}
+
+.boxredes{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background: black;
+    height: 150px;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+}
+
+.boxredes h2 {
+    margin: 10px;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+}
+
+.boxredes a{
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    margin-inline: 5px;
+    width: 45px;
+    height: 45px;
+}
+
+.copyright{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background: rgb(99, 158, 209);
+    height: 150px;
+    padding: 10px;
+    color: white;
+}
+
+.copyright > h3{
+    font-size: 20px;
+}
+
+/*    HTML INDEX  HTML INDEX  HTML INDEX  HTML INDEX    */
+
+
+.maindex{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(230, 230, 230);
+}
+
+main .h2index {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+    font-size: 36px;
+    color: black;
+    border-radius: 5px;
+    font-weight: bolder;
+}
+@media screen and (max-width:1719px){
+    .tarjetas{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media  screen and (max-width:884px){
+    .tarjeta{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+    }
+    .tarjeta-info{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 250px;
+        padding: 5px;
+    }
+    .tarjeta-info > p{
+        width: 250px;
+        padding: 5px;
+    }
+    .tarjeta > img{
+        width: 250px;
+        height: 250px;
+    }
+}
+@media screen and (max-width:542px){
+    .tarjetas{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        background-color: aqua;
+        width: auto;
+        margin: 5px;
+        padding: 5px;
+        justify-content: center;
+        align-items: center;
+    }
+    .tarjeta{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(20, 220, 167);
+        width: auto;
+        padding: 20px;
+        margin: 5px;
+        border: 5px solid darkslategrey;
+    }
+    .tarjeta-info{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+        padding: 5px;
+    }
+    .tarjeta-info >p{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: auto;
+        justify-content: center;
+        align-items: center;
+    }
+    .tarjeta > .img{
+        width: 250px;
+        height: 250px;
+    }
+}   
+
+.tarjetas {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    min-height: 300px;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px;
+    color: white;
+}
+.tarjeta .img{
+    border-radius: 20px;
+    width: 320px;
+    height: 320px;
+    border-color: black;
+    border-style: solid;
+    border-width: 2px;
+}
+.tarjeta{
+    display: flex;
+    flex-direction: row;
+    width: 800px;
+    column-gap: 10px;
+    margin: 25px;
+    border-radius: 5px;
+    padding: 10px;
+}
+.tarjeta-info{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    column-gap: 10px;
+    margin: 10px;
+    padding: 10px;
+    border-color: black;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 10px;
+    background-color: white;
+}
+.tarjeta-info h3{
+    width: 250 px;
+    margin: 3 px;
+    padding: 10 px;
+    border-radius: 5 px;
+    color: black;
+    font-weight: bolder;
+    font-size: 25px;
+    text-align: center;
+}
+
+.tarjeta-info p{
+    width: 420px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    color: black;
+    font-size: large;
+}
+
+.botn{
+    display: block;
+    text-align: center;
+    width: 95px;
+    margin-top: 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+}
+
+.botn:hover{
+    cursor: pointer;
+    background-color: lightblue;
+    color: black;
+    border: black, solid, 2px;
+    font-weight: bolder;
+}
+
+.botnindex{
+    display: block;
+    text-align: center;
+    margin-left: 300px;
+    width: 95px;
+    margin-top: 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: black;
+    border: 1px solid whitesmoke;
+    color: white;
+}
+
+.botnindex:hover{
+    cursor: pointer;
+    background-color: lightblue;
+    color: black;
+    border: black, solid, 2px;
+    font-weight: bolder;
+}
+
+.asideindex{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 400px;
+}
+.asideindex > img{
+    width: 100%;
+    height: 400px;
+    border-bottom: 1px solid white;
+}
+
+
+/*                  FIN HTML INDEX             */
+
+/*                        HTML Productos              */
+.logonav{
+    width: 75px;
+    height: 75px;
+}
+.navbar-brand{
+    color: black;
+}
+.navbar-toggler-icon{
+    background-color: white;
+}
+.mainproductos{
+    background-color: white;
+}
+
+.productos {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo{
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 36px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgb(154, 209, 228),rgb(122, 114, 114));
+}
+
+.caja{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+.caja img{
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+    border-radius: 40px;
+    padding: 15px;
+}
+
+
+/* hover tarjetas sombra efecto transparente */
+
+.caja:hover{
+    cursor: pointer;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
+    overflow: hidden;
+}
+
+/* hover tarjeta mini zoom en img */
+
+.caja:hover img{
+    transform: scale(1.2);
+}
+/*  */
+
+
+.caja p{
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    width: 250px;
+    padding: 15px 30px;
+}
+.btnprod{
+    display: block;
+    text-align: center;
+    width: 95px;
+    margin-top: 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: black;
+    border: 1px solid black;
+    color: white;
+}
+.btnprod:hover{
+    cursor: pointer;
+    background-color: lightblue;
+    color: black;
+    font-weight: bolder;
+}
+.btnnro{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    border-radius: 10px;
+    gap: 10px;
+}
+.btnum{
+    background-color: black;
+    color: white;
+}
+
+.btnnro > .btnum:hover{
+    cursor: pointer;
+    font-weight: bolder;
+    background-color: lightblue;
+}
+
+
+.carousel-item{
+    height: 300px;
+    width: 100%;
+}
+.carousel-item >img{
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+/* FIN HTML PRODUCTOS */
+
+/* HTML Quienes Somos HTML Quienes Somos  HTML Quienes Somos */
+
+.mainqsomos{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+.quienesomos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.mainqsomos h1{
+    font-weight: bolder;
+    text-align: center;
+    font-size: 36px;
+    padding: 10px;
+}
+.nuestrobjetivo{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.mainqsomos h2, p {
+    text-align: center;
+    font-weight: bolder;
+    padding: 10px;
+    margin: 5px;
+}
+.fundador{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.ceo{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: rgb(230, 230, 230);
+    justify-content: center;
+    padding: 10px;
+    gap: 10px;
+    margin: 10px;
+    width: 500px;
+    border-radius: 50px;
+    box-shadow: 0px 5px 10px black
+}
+.ceo > img{
+    width: 250px;
+    border-radius: 95px;
+    padding: 10px;
+}
+.ceodetail{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    width: 500px;
+    padding: 10px;
+}
+
+.ceodetail > i , a{
+    text-decoration: none;
+    color: black;
+}
+
+@media screen and (max-width:554px){
+    .ceo{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.sponsorsdiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 15px;
+    gap: 30px;
+    margin: 15px;
+}
+.sponsor{
+    background-color: rgb(230, 230, 230);
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    box-shadow: 0px 5px 10px black;
+    padding: 25px;
+}
+
+.sponsor > img{
+    width: 250px;
+    border-radius: 20px;
+    border: solid 5px black;;
+    padding: 10px;
+    object-fit: cover;
+}
+
+.asideqsomos{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 550px;
+}
+
+.asideqsomos > img{
+    width: 100%;
+    height: 550px;
+}
+/*                FIN  HTML Quienes Somos             */
+
+
+
+/* HTML CONTACTOS HTML CONTACTOS HTML CONTACTOS */
+
+.maincontactos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.contacto{
+    font-weight: bolder;
+    font-size: 42px;
+    padding: 10px;
+    margin: 5px;
+}
+.contacto2{
+    margin: 5px;
+    padding: 5px;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 700px;
+    padding: 10px;
+    margin: 50px;
+    background-image: linear-gradient(white,rgb(247, 250, 251),rgb(99, 158, 209));
+    border-radius: 5px;
+    border: solid black 1px;
+    box-shadow: 3px 3px 3px 3px black;
+}
+.formulario > input, label{
+    margin: 5px;
+    padding: 5px;
+    font-weight: bold;
+}
+.btnform{
+    display: block;
+    align-self: end;
+    width: 95px;
+    margin: 15px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: lightblue;
+    border: 1px solid black;
+    color: black;
+    font-weight: bold;
+}
+.btnform:hover{
+    cursor: pointer;
+    background-color: whitesmoke;
+    color: black;
+    font-weight: bolder;
+}
+
+.map{
+    width: fit-content;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin: 50px;
+    gap: 50px;
+}
+
+.contactosmap {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 5px;
+    border: 4px solid black;
+    width: fit-content;
+    box-shadow: 3px 3px 3px rgb(16, 16, 16);
+    background-image: linear-gradient(white,rgb(247, 250, 251),rgb(99, 158, 209));
+}
+
+#mapa{
+    margin: 10px;
+    padding: 1px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 2px rgb(12, 12, 0);
+}
+.reseñas{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    font-size: 16px;
+    border: 1px solid black;;
+}
+
+
+/*                FIN HTML CONTACTOS            */
+
+
+/* HTML FAQ  HTML FAQ   HTML FAQ   HTML FAQ */
+
+.faqimg{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: white;
+}
+
+.mainfaq{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    background-color: rgb(233, 233, 231);
+}
+
+
+.mainfaq h1{
+    font-weight: bolder;
+    text-align: center;
+    font-size: 36px;
+    padding: 10px;
+}
+
+.mainfaq  h2 , p ,h3, h4, h5, h6{
+    text-align: center;
+    padding: 5px;
+}
+
+.mainfaq span{
+    font-weight: bolder;
+}
+
+.asidefaq{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow: hidden;
+}
+.asidefaq > img{
+    width: 100%;
+    height: 300px;
+    object-fit: fill;
+}
+
+
+/*            FIN HTML FAQ            */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
