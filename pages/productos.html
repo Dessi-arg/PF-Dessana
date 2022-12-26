@@ -10,10 +10,10 @@
     <link rel="shortcut icon" href="../assets/img/jordanoffwihite.png" type="image/x-icon">
 </head>
 <body>
-    <nav class="navbar bg-light fixed" >
-            <div class="container-fluid justify-content-evenly" >
-            <img class="logonav" src="../assets/img/jordanoffwihite.png" alt="">
-            <a class="navbar-brand" href="#">ROStreetwear</a>
+    <nav class="bg-black navbar bg-light fixed" >
+        <div class="container-fluid justify-content-evenly" >
+            <img class="logonav" src="../assets/img/logo.png" alt="logo">
+            <a class="navbar-brand" href="../index.html">ROStreetwear</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -40,70 +40,96 @@
                         <a class="nav-link" href="../pages/faq.html">FAQ</a>
                     </li>
                 </ul>
-                <form class="d-flex mt-3" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
                 </div>
             </div>
         </div>
     </nav>
     <header>
-        
+        <div class="titulo">CATALOGO DE PRODUCTOS</div>
     </header>
-    <main class="mainproductos container-fluid col-12">
-            <div class="titulo">CATALOGO DE PRODUCTOS</div>
-            <nav style="--bs-breadcrumb-divider: '';" aria-label="breadcrumb">
-                <ol class="breadcrumb m-2">
-                  <li class="breadcrumb-item"><a href="../index.html">Inicio</a></li>
-                  <li class="breadcrumb-item active" aria-current="page">Productos</li>
-                </ol>
-              </nav>
-            <div class="productos">
-                <div class="caja"><img class="img-fluid" src="../assets/img/productos/bigswooshjacket.png"><p>Big Swoosh Jacket</p>
-                <p>$ 30.000</p><button class="btnprod">Comprar</button></div>
-                
-                <div class="caja"><img class="img-fluid" src="../assets/img/productos/converseallcomme.png"><p>Converse Chuck Taylor Hi</p>
-                <p>$ 39.000</p><button class="btnprod">Comprar</button></div>
-                
-                <div class="caja"><img class="img-fluid" src="../assets/img/productos/mochilaeverlast.png"><p>Mochila Everlast</p>
-                <p>$ 8.899</p><button class="btnprod">Comprar</button></div>
-                
-                <div class="caja"><img class="img-fluid" src="../assets/img/productos/jordan1chicago.png"><p>Jordan 1 Retro High OG</p>
-                <p>$ 54.000</p><button class="btnprod">Comprar</button></div>
-                
-                <div class="caja"><img class="img-fluid" src="../assets/img/productos/gorrobeanidc.png"><p>Gorro Beanie Big Star</p>
-                <p>Precio: $ 4.999</p><button class="btnprod">Comprar</button></div>
-                
-                <div class="caja"><img class="img-fluid" src="../assets/img/nb.png"><p>New Balance 550</p>
-                <p>$ 32.999</p><button class="btnprod">Comprar</button></div>
-                
-                <div class="caja"><img class="img-fluid" src="../assets/img/productos/versaceeros.png"><p>Versace Eros EDT 100 ml</p>
-                <p>$ 25.790</p><button class="btnprod">Comprar</button></div>
-                
-                <div class="caja"><img class="img-fluid" src="../assets/img/productos/shortpuma.png"><p>Short Puma Running</p>
-                <p>$ 9.999</p><button class="btnprod">Comprar</button></div>
-                
-                <div class="caja"><img class="img-fluid" src="../assets/img/productos/vulklens.png"><p>Anteojos de sol azul espejada Vulk Raven</p>
-                <p>$ 54.000</p><button class="btnprod">Comprar</button></div>
-                
-                <div class="caja"><img class="img-fluid" src="../assets/img/productos/jordan4toro.png"><p>Jordan 4 Retro Toro Bravo</p>
-                <p>$ 54.000</p><button class="btnprod">Comprar</button></div>
-                
-                <div class="caja"><img class="img-fluid" src="../assets/img/productos/pantalonfullprint.png"><p>Pantalón Full Print</p>
-                <p>$ 11.999</p><button class="btnprod">Comprar</button></div>
-                
-                <div class="caja"><img class="img-fluid" src="../assets/img/productos/bolsowilson.png"><p>Bolso Deportivo Wilson Viaje Urbano Gym</p>
-                <p>$ 12.999</p><button class="btnprod">Comprar</button></div>
-                
-                <div class="caja"><img class="img-fluid" src="../assets/img/productos/riñonera.png"><p>Riñonera Hombre Mujer Alpine Skate</p>
-                <p>$ 4.680</p><button class="btnprod">Comprar</button></div>
-                
-                <div class="caja"><img class="img-fluid" src="../assets/img/productos/onemillion.png"><p>Paco Rabanne 1 Million EDT 100 ml</p>
-                <p>$ 25.745</p><button class="btnprod">Comprar</button></div>
-                
-                <div class="caja"><img class="img-fluid" src="../assets/img/productos/relojswatch.png"><p>Reloj Swatch Bioceramic C-grey</p>
-                <p>$ 34.995</p><button class="btnprod">Comprar</button></div>
+    <main>
+            <div>
+                <nav style="--bs-breadcrumb-divider: '';" aria-label="breadcrumb">
+                    <ol class="breadcrumb m-2">
+                        <li class="breadcrumb-item"><a href="../index.html">Inicio</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Productos</li>
+                    </ol>
+                </nav>
+            </div> 
+            <div class="container-fluid d-flex flex-row flex-wrap justify-content-center align-items-center">    
+                    <div class="card-body d-flex flex-column align-items-center w-350 h-350 ">
+                                <img src="../assets/img/productos/bigswooshjacket.png" class="imgprod" alt="bigswooshjacket">
+                                <h5 class="card-title">Big Swoosh Jacket</h5>
+                                <p class="card-text">$ 30.000</p>
+                                <a href="#" class="btnprod">Comprar</a>
+                    </div>
+                    <div class="card-body d-flex flex-column align-items-center w-300 h-300 ">
+                        <img src="../assets/img/productos/bigswooshjacket.png" class="imgprod" alt="bigswooshjacket">
+                        <h5 class="card-title">Big Swoosh Jacket</h5>
+                        <p class="card-text">$ 30.000</p>
+                        <a href="#" class="btnprod">Comprar</a>
+                    </div>
+                    <div class="card-body d-flex flex-column align-items-center w-300 h-300 ">
+                        <img src="../assets/img/productos/bigswooshjacket.png" class="imgprod" alt="bigswooshjacket">
+                        <h5 class="card-title">Big Swoosh Jacket</h5>
+                        <p class="card-text">$ 30.000</p>
+                        <a href="#" class="btnprod">Comprar</a>
+                    </div>
+                    <div class="card-body d-flex flex-column align-items-center w-300 h-300 ">
+                        <img src="../assets/img/productos/bigswooshjacket.png" class="imgprod" alt="bigswooshjacket">
+                        <h5 class="card-title">Big Swoosh Jacket</h5>
+                        <p class="card-text">$ 30.000</p>
+                        <a href="#" class="btnprod">Comprar</a>
+                    </div>
+                    <div class="card-body d-flex flex-column align-items-center w-300 h-300 ">
+                        <img src="../assets/img/productos/bigswooshjacket.png" class="imgprod" alt="bigswooshjacket">
+                        <h5 class="card-title">Big Swoosh Jacket</h5>
+                        <p class="card-text">$ 30.000</p>
+                        <a href="#" class="btnprod">Comprar</a>
+                    </div>
+                    <div class="card-body d-flex flex-column align-items-center w-300 h-300 ">
+                        <img src="../assets/img/productos/bigswooshjacket.png" class="imgprod" alt="bigswooshjacket">
+                        <h5 class="card-title">Big Swoosh Jacket</h5>
+                        <p class="card-text">$ 30.000</p>
+                        <a href="#" class="btnprod">Comprar</a>
+                    </div>
+                    <div class="card-body d-flex flex-column align-items-center w-300 h-300 ">
+                        <img src="../assets/img/productos/bigswooshjacket.png" class="imgprod" alt="bigswooshjacket">
+                        <h5 class="card-title">Big Swoosh Jacket</h5>
+                        <p class="card-text">$ 30.000</p>
+                        <a href="#" class="btnprod">Comprar</a>
+                    </div>
+                    <div class="card-body d-flex flex-column align-items-center w-300 h-300 ">
+                        <img src="../assets/img/productos/bigswooshjacket.png" class="imgprod" alt="bigswooshjacket">
+                        <h5 class="card-title">Big Swoosh Jacket</h5>
+                        <p class="card-text">$ 30.000</p>
+                        <a href="#" class="btnprod">Comprar</a>
+                    </div>
+                    <div class="card-body d-flex flex-column align-items-center w-300 h-300 ">
+                        <img src="../assets/img/productos/bigswooshjacket.png" class="imgprod" alt="bigswooshjacket">
+                        <h5 class="card-title">Big Swoosh Jacket</h5>
+                        <p class="card-text">$ 30.000</p>
+                        <a href="#" class="btnprod">Comprar</a>
+                    </div>
+                    <div class="card-body d-flex flex-column align-items-center w-300 h-300 ">
+                        <img src="../assets/img/productos/bigswooshjacket.png" class="imgprod" alt="bigswooshjacket">
+                        <h5 class="card-title">Big Swoosh Jacket</h5>
+                        <p class="card-text">$ 30.000</p>
+                        <a href="#" class="btnprod">Comprar</a>
+                    </div>
+                    <div class="card-body d-flex flex-column align-items-center w-300 h-300 ">
+                        <img src="../assets/img/productos/bigswooshjacket.png" class="imgprod" alt="bigswooshjacket">
+                        <h5 class="card-title">Big Swoosh Jacket</h5>
+                        <p class="card-text">$ 30.000</p>
+                        <a href="#" class="btnprod">Comprar</a>
+                    </div>
+                    <div class="card-body d-flex flex-column align-items-center w-300 h-300 ">
+                        <img src="../assets/img/productos/bigswooshjacket.png" class="imgprod" alt="bigswooshjacket">
+                        <h5 class="card-title">Big Swoosh Jacket</h5>
+                        <p class="card-text">$ 30.000</p>
+                        <a href="#" class="btnprod">Comprar</a>
+                    </div>
+                    
             </div>
             <div class="btnnro">
                 <button class="btn btnum">1</button>
@@ -111,7 +137,6 @@
                 <button class="btn btnum">3</button>
                 <button class="btn btnum">Siguiente</button>
             </div>
-    
     </main>
     <aside>
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
@@ -134,19 +159,17 @@
           </div>
     </aside>
     <footer>
-            <div class="footerredes">
-                <div class="boxredes">
-                    <h2>NUESTRAS REDES!!</h2>
-                    <a href="https://www.facebook.com/" target="_blank"><img src="../assets/img/iconofacebbok.png"></a>
-                    <a href="https://www.instagram.com/" target="_blank"><img src="../assets/img/instagram.png"></a>
-                    <a href="https://www.whatsappweb.com/" target="_blank"><img src="../assets/img/iconowhatapp.png"></a>
-                    <a href="https://www.twitter.com/" target="_blank"><img src="../assets/img/twitterlogo.png"></a>
-                </div>
-                <div class="copyright">
-                    <h3>Todos los derechos reservados, ROStreetwear by Dessi</h3>
-                </div>
-            </div>
-    </footer>
+        <div class="copyright">
+            <h3>341CLOTHES© by Franco Dessana, Rosario 2023, Todos los derechos reservados</h3>
+        </div>
+        <div class="boxredes">
+            <h2>SEGUINOS EN NUESTRAS REDES!!</h2>
+            <a href="https://www.facebook.com/" target="_blank"><img src="../assets/img/iconofacebbok.png"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="../assets/img/instagram.png"></a>
+            <a href="https://www.whatsappweb.com/" target="_blank"><img src="../assets/img/iconowhatapp.png"></a>
+            <a href="https://www.twitter.com/" target="_blank"><img src="../assets/img/twitterlogo.png"></a>
+        </div>
+</footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </body>
 </html>

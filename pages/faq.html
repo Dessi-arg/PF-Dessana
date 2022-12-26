@@ -11,43 +11,98 @@
 </head>
 <body>
     <header>
-        <div class="headercontent">
-            <img src="../assets/img/jordanoffwihite.png" alt="Logo">
-            <h2 class="titulologo">341CLOTHES</h2>
-        </div> 
-        <nav>
-           <ul class="navegador">
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./productos.html">Productos</a></li>
-                <li><a href="./quienessomos.html">Quienes somos</a></li>
-                <li><a href="./contactos.html">Contactos</a></li>
-                <li><a href="./faq.html">Preguntas Frecuentes</a></li>
-           </ul>            
-        </nav>
+        <nav class="bg-black navbar bg-light fixed" >
+            <div class="container-fluid justify-content-evenly" >
+            <img class="logonav" src="../assets/img/logo.png" alt="logo">
+            <a class="navbar-brand" href="../index.html">ROStreetwear</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">ROStreetwear</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/quienessomos.html">Quienes Somos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/contactos.html">Contactos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/faq.html">FAQ</a>
+                    </li>
+                </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
     </header>
-        <video class="faqimg" width="256" height="256" preload="none" style="background: transparent  url('https://cdn-icons-png.flaticon.com/512/6172/6172517.png') 50% 50% / fit no-repeat;" autoplay="autoplay" loop="true" muted="muted" playsinline="">
-            <source src="https://cdn-icons-mp4.flaticon.com/512/6172/6172517.mp4" type="video/mp4">
-        </video>
-    <main class="mainfaq">
+        
+    <main class="mainfaq container-fluid justify-content-center">
+        <div class="divfaqmain">
+            <video width="256" height="256" preload="none" style="background: transparent  url('https://cdn-icons-png.flaticon.com/512/6172/6172517.png') 50% 50% / fit no-repeat;" autoplay="autoplay" loop="true" muted="muted" playsinline="">
+                <source src="https://cdn-icons-mp4.flaticon.com/512/6172/6172517.mp4" type="video/mp4">
+            </video>
             <h1>Preguntas Frecuentes</h1>
+        </div>   
             <p>Una herramienta útil y detallada que te permite encontrar respuestas a tus inquietudes.</p>
-            <h2>¿Cuales son los medios de pago disponibles?</h2>
-            <p><span>Tarjeta de crédito:</span> Aprovechá las cuotas sin interés vigentes.</p>
-            <p><span>Mercado Pago:</span> Aplican todas las promociones disponibles en Mercado Pago.</p>
-            <p><span>Efectivo:</span>  Podes abonar en cualquier sucursal de Rapipago, Pago Fácil o Carga Virtual seleccionando Mercado Pago y obetiendo el cupón de pago al finalizar la compra</p>
-            <p><span>Modo:</span> podes abonar seleccionando la opción y serás redirigido a MODO o a tu HomeBanking. Debes estar adherido a MODO.</p>
-            <p><span>Criptodivisas:</span> es posible realizar el pago mediante tranferencia de cryptos en las redes ETH,BNB,SOL,TRX y BTC(aplican cargos de transacción a cambio del comprador)</p>
-            <h2>Envíos y retiros de pedidos</h2>
-            <p>Las entregas se realizan en cajas cerradas a través de empresas de correo logístico especializadas en distribución y entrega de mercaderías.</p>
-            <h3>¿Puede otra persona recibir mi pedido?</h3>
-            <p>Sí, cualquier persona de mayor de edad puede recibir la mercadería siempre que se encuentre en el domicilio de entrega indicado.</p><br>
-            <h3>¿En qué días y horarios se entregan los pedidos?</h3>
-            <p>Las entregas de pedidos se realizan de lunes a viernes de 8:00 a 20:00. No se entregan pedidos los días domingos ni feriados, ni los días de paro de transporte.</p><br>
-            <h2>Atención al Cliente</h2>
-            <h3>¿Cuál es el horario de atención al cliente?</h3>
-            <p>El horario de Atención al cliente es todos los días de 8 a 21 hs.</p>
-            <h3>¿Cómo hago para contactarme?</h3>
-            <p>Puedes contactarnos a través de la dirección de correo rostreetwear@gmail.com.ar o por cualquiera de nuestras redes sociales.</p> 
+            <div class="accordion m-3" id="accordionPanelsStayOpenExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                        ¿Cuales son los medios de pago disponibles?
+                    </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                        <div class="accordion-body">
+                            <p><span>Tarjeta de crédito:</span> Aprovechá las cuotas sin interés vigentes.</p>
+                            <p><span>Mercado Pago:</span> Aplican todas las promociones disponibles en Mercado Pago.</p>
+                            <p><span>Efectivo:</span>  Podes abonar en cualquier sucursal de Rapipago, Pago Fácil o Carga Virtual seleccionando Mercado Pago y obetiendo el cupón de pago al finalizar la compra</p>
+                            <p><span>Modo:</span> podes abonar seleccionando la opción y serás redirigido a MODO o a tu HomeBanking. Debes estar adherido a MODO.</p>
+                            <p><span>Criptodivisas:</span> es posible realizar el pago mediante tranferencia de cryptos en las redes ETH,BNB,SOL,TRX y BTC(aplican cargos de transacción a cambio del comprador)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                        ¿En qué días y horarios se entregan los pedidos?
+                    </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                        <div class="accordion-body">
+                            <p>Las entregas se realizan en cajas cerradas a través de empresas de correo logístico especializadas en distribución y entrega de mercaderías.</p>
+                            <p>Las entregas de pedidos se realizan de lunes a viernes de 8:00 a 20:00. No se entregan pedidos los días domingos ni feriados, ni los días de paro de transporte.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                        ¿Cuál es el horario de atención al cliente? / ¿Cómo hago para contactarme?
+                    </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                        <div class="accordion-body">
+                            <p>El horario de Atención al cliente es todos los días de 8 a 21 hs.</p>
+                            <p>Puedes contactarnos a través de la dirección de correo 341clothes@gmail.com.ar o por cualquiera de nuestras redes sociales.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            
     </main>
     <aside class="asidefaq">
         <img src="../assets/img/faq.png" alt="">
