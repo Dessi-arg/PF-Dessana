@@ -1,32 +1,17 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap");
 
-/* font family: Open+Sans
-font-family: 'Open Sans', sans-serif; */
-
-body{
+body {
     background-color: rgb(248, 248, 248);
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
 }
-/*.bodycontactos{
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr 2fr; 
-    grid-template-rows: 1fr 2fr 1fr 1fr;
-    grid-template-areas:    "nav nav nav nav"
-                            "main main main main"
-                            "aside aside aside aside"
-                            "footer footer footer footer";
-}*/
 
-/* NAV Y FOOTER CON FLEX */
-
-
-.navbargf{
+.navbargf {
     background-color: black;
     color: deepskyblue;
     height: 48px;
@@ -37,56 +22,63 @@ body{
     align-items: center;
 }
 
-.imgnav{
+.imgnav {
     height: 48px;
     padding: 2px;
     width: 48px;
 }
 
-.titulologo{
+.titulologo {
     font-size: 36px;
     padding: 5px;
 }
 
-.checkbox, .iconos{
-    width: 24px; height: 24px;
+.checkbox,.iconos {
+    width: 24px;
+    height: 24px;
     position: absolute;
-    top: 10px; right: 12px;
+    top: 10px;
+    right: 12px;
     cursor: pointer;
 }
 
-.iconos{
+.iconos {
     pointer-events: none;
     font-size: 24px;
     color: deepskyblue;
 }
 
-.fi-br-cross{
+.fi-br-cross {
     display: none;
 }
 
-.checkbox{
+.checkbox {
     opacity: 0;
 }
-.checkbox:checked ~ .fi-br-menu-burger{
+
+.checkbox:checked~.fi-br-menu-burger {
     display: none;
 }
-.checkbox:checked ~ .fi-br-cross{
+
+.checkbox:checked~.fi-br-cross {
     display: block;
 }
-.menugf{
+
+.menugf {
     border: 1px solid black;
     width: 250px;
     position: absolute;
-    top: -165px; right:0px;
+    top: -165px;
+    right: 0px;
     z-index: -1;
     transition: 250ms;
 }
-.menugf{
+
+.menugf {
     list-style: none;
 }
 
-.menugf > li a{
+.menugf>li a {
     color: black;
     background-color: deepskyblue;
     text-decoration: none;
@@ -94,18 +86,18 @@ body{
     padding: 12px;
 }
 
-.menugf > li a:hover{
+.menugf>li a:hover {
     background-color: black;
     color: deepskyblue;
 }
 
-.checkbox:checked ~ .menugf{
+.checkbox:checked~.menugf {
     display: block;
     top: 48px;
     z-index: 1;
 }
 
-footer{
+footer {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -115,7 +107,7 @@ footer{
     padding: 1px;
 }
 
-.boxredes{
+.boxredes {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -135,7 +127,7 @@ footer{
     text-align: center;
 }
 
-.boxredes a{
+.boxredes a {
     display: flex;
     flex-direction: row;
     justify-items: center;
@@ -144,7 +136,7 @@ footer{
     height: 45px;
 }
 
-.copyright{
+.copyright {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -156,27 +148,26 @@ footer{
     color: white;
 }
 
-.copyright > h3{
+.copyright>h3 {
     font-size: 20px;
 }
 
-/*    HTML INDEX  HTML INDEX  HTML INDEX  HTML INDEX    */
-
-.bodyindex{
+.bodyindex {
     display: grid;
-    grid-template-columns: repeat(3,minmax(300px,1fr));
+    grid-template-columns: repeat(3, minmax(300px, 1fr));
     grid-template-rows: auto 2fr 800px;
-    grid-template-areas: "header header header "
-                        "main main main "
-                        "aside aside aside"
-                        "footer footer footer"
+    grid-template-areas:
+        "header header header "
+        "main main main "
+        "aside aside aside"
+        "footer footer footer";
 }
 
-.headerindex{
+.headerindex {
     grid-area: header;
 }
 
-.maindex{
+.maindex {
     grid-area: main;
     display: flex;
     flex-direction: column;
@@ -195,8 +186,9 @@ main .h2index {
     border-radius: 5px;
     font-weight: bolder;
 }
-@media screen and (max-width:1719px){
-    .tarjetas{
+
+@media screen and (max-width: 1719px) {
+    .tarjetas {
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -205,8 +197,9 @@ main .h2index {
         align-items: center;
     }
 }
-@media  screen and (max-width:884px){
-    .tarjeta{
+
+@media screen and (max-width: 884px) {
+    .tarjeta {
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -215,7 +208,8 @@ main .h2index {
         align-items: center;
         padding: 5px;
     }
-    .tarjeta-info{
+
+.tarjeta-info {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
@@ -224,17 +218,20 @@ main .h2index {
         width: 250px;
         padding: 5px;
     }
-    .tarjeta-info > p{
+
+    .tarjeta-info>p {
         width: 250px;
         padding: 5px;
     }
-    .tarjeta > img{
+
+    .tarjeta>img {
         width: 250px;
         height: 250px;
     }
 }
-@media screen and (max-width:542px){
-    .tarjetas{
+
+@media screen and (max-width: 542px) {
+    .tarjetas {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
@@ -244,7 +241,8 @@ main .h2index {
         justify-content: center;
         align-items: center;
     }
-    .tarjeta{
+
+    .tarjeta {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
@@ -254,7 +252,8 @@ main .h2index {
         padding: 20px;
         margin: 5px;
     }
-    .tarjeta-info{
+
+    .tarjeta-info {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
@@ -263,7 +262,8 @@ main .h2index {
         width: 100%;
         padding: 5px;
     }
-    .tarjeta-info >p{
+
+    .tarjeta-info>p {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
@@ -271,11 +271,12 @@ main .h2index {
         justify-content: center;
         align-items: center;
     }
-    .tarjeta > .img{
+
+    .tarjeta>.img {
         width: 250px;
         height: 250px;
     }
-}   
+}
 
 .tarjetas {
     display: flex;
@@ -289,7 +290,8 @@ main .h2index {
     margin: 10px;
     color: white;
 }
-.tarjeta .img{
+
+.tarjeta .img {
     border-radius: 20px;
     width: 320px;
     height: 320px;
@@ -297,7 +299,8 @@ main .h2index {
     border-style: solid;
     border-width: 2px;
 }
-.tarjeta{
+
+.tarjeta {
     display: flex;
     flex-direction: row;
     width: 800px;
@@ -306,7 +309,8 @@ main .h2index {
     border-radius: 5px;
     padding: 10px;
 }
-.tarjeta-info{
+
+.tarjeta-info {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -319,7 +323,8 @@ main .h2index {
     border-radius: 10px;
     background-color: white;
 }
-.tarjeta-info h3{
+
+.tarjeta-info h3 {
     width: 250 px;
     margin: 3 px;
     padding: 10 px;
@@ -330,7 +335,7 @@ main .h2index {
     text-align: center;
 }
 
-.tarjeta-info p{
+.tarjeta-info p {
     width: 420px;
     margin: 10px;
     padding: 10px;
@@ -339,7 +344,7 @@ main .h2index {
     font-size: large;
 }
 
-.botn{
+.botn {
     display: block;
     text-align: center;
     width: 95px;
@@ -351,7 +356,7 @@ main .h2index {
     color: black;
 }
 
-.botn:hover{
+.botn:hover {
     cursor: pointer;
     background-color: lightblue;
     color: black;
@@ -359,7 +364,7 @@ main .h2index {
     font-weight: bolder;
 }
 
-.botnindex{
+.botnindex {
     display: block;
     text-align: center;
     margin-left: 300px;
@@ -372,7 +377,7 @@ main .h2index {
     color: white;
 }
 
-.botnindex:hover{
+.botnindex:hover {
     cursor: pointer;
     background-color: lightblue;
     color: black;
@@ -380,7 +385,7 @@ main .h2index {
     font-weight: bolder;
 }
 
-.asideindex{
+.asideindex {
     grid-area: aside;
     display: flex;
     flex-direction: row;
@@ -388,43 +393,35 @@ main .h2index {
     width: 100%;
     height: 800px;
 }
-.asideindex > img{
+
+.asideindex>img {
     width: 100%;
     height: 400px;
     border-bottom: 1px solid white;
 }
-.footerindex{
+
+.footerindex {
     grid-area: footer;
 }
 
-/*                  FIN HTML INDEX             */
-
-/*                        HTML Productos              */
-.logonav{
+.logonav {
     width: 75px;
     height: 75px;
 }
-.navbar-brand{
+
+.navbar-brand {
     color: black;
 }
-.navbar-toggler-icon{
-    background-color: white;
-}
-.mainproductos{
+
+.navbar-toggler-icon {
     background-color: white;
 }
 
-/*
-.productos {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}*/
+.mainproductos {
+    background-color: white;
+}
 
-.titulo{
+.titulo {
     width: 100%;
     height: 100px;
     text-align: center;
@@ -434,13 +431,14 @@ main .h2index {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(rgb(154, 209, 228),rgb(122, 114, 114));
+    background-image: linear-gradient(rgb(154, 209, 228), rgb(122, 114, 114));
 }
-.mainprod{
+
+.mainprod {
     background-color: white;
 }
 
-.imgprod{
+.imgprod {
     width: 300px;
     height: 300px;
     object-fit: contain;
@@ -448,31 +446,17 @@ main .h2index {
     padding: 25px;
 }
 
-
-/* hover tarjetas sombra efecto transparente */
-
-.card-body:hover{
+.card-body:hover {
     cursor: pointer;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     overflow: hidden;
 }
 
-/* hover tarjeta mini zoom en img */
-
-.card-body:hover img{
+.card-body:hover img {
     transform: scale(1.2);
 }
-/*  */
 
-
-.caja p{
-    text-align: center;
-    font-weight: bold;
-    font-size: 20px;
-    width: 250px;
-    padding: 15px 30px;
-}
-.btnprod{
+.btnprod {
     display: block;
     text-align: center;
     width: 95px;
@@ -483,13 +467,15 @@ main .h2index {
     border: 1px solid black;
     color: white;
 }
-.btnprod:hover{
+
+.btnprod:hover {
     cursor: pointer;
     background-color: lightblue;
     color: black;
     font-weight: bolder;
 }
-.btnnro{
+
+.btnnro {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -498,49 +484,45 @@ main .h2index {
     border-radius: 10px;
     gap: 10px;
 }
-.btnum{
+
+.btnum {
     background-color: black;
     color: white;
 }
 
-.btnnro > .btnum:hover{
+.btnnro>.btnum:hover {
     cursor: pointer;
     font-weight: bolder;
     background-color: lightblue;
 }
 
-
-.carousel-item{
+.carousel-item {
     height: 300px;
     width: 100%;
 }
-.carousel-item >img{
+
+.carousel-item>img {
     height: 300px;
     width: 100%;
     object-fit: cover;
 }
 
-
-/* FIN HTML PRODUCTOS */
-
-/* HTML Quienes Somos HTML Quienes Somos  HTML Quienes Somos */
-
-.bodyqsomos{
+.bodyqsomos {
     display: grid;
-    grid-template-columns: repeat(3,minmax(300px,1fr));
+    grid-template-columns: repeat(3, minmax(300px, 1fr));
     grid-template-rows: auto 2fr 500px;
-    grid-template-areas: "header header header "
-                        "main main main "
-                        "aside aside aside"
-                        "footer footer footer"
+    grid-template-areas:
+        "header header header "
+        "main main main "
+        "aside aside aside"
+        "footer footer footer";
 }
 
-.headerqsomos{
+.headerqsomos {
     grid-area: header;
 }
 
-
-.mainqsomos{
+.mainqsomos {
     grid-area: main;
     background-color: white;
     display: flex;
@@ -549,7 +531,8 @@ main .h2index {
     justify-items: center;
     align-items: center;
 }
-.quienesomos{
+
+.quienesomos {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -557,26 +540,29 @@ main .h2index {
     align-items: center;
 }
 
-.mainqsomos h1{
+.mainqsomos h1 {
     font-weight: bolder;
     text-align: center;
     font-size: 36px;
     padding: 10px;
 }
-.nuestrobjetivo{
+
+.nuestrobjetivo {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
-.mainqsomos > h2{
+
+.mainqsomos>h2 {
     text-align: center;
     font-weight: bolder;
     padding: 10px;
     margin: 5px;
 }
-.pqsomos{
+
+.pqsomos {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -587,14 +573,16 @@ main .h2index {
     width: auto;
     margin-right: 20px;
 }
-.fundador{
+
+.fundador {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
-.ceo{
+
+.ceo {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -605,14 +593,16 @@ main .h2index {
     margin: 10px;
     width: 500px;
     border-radius: 50px;
-    box-shadow: 0px 5px 10px black
+    box-shadow: 0px 5px 10px black;
 }
-.ceo > img{
+
+.ceo>img {
     width: 250px;
     border-radius: 95px;
     padding: 10px;
 }
-.ceodetail{
+
+.ceodetail {
     display: flex;
     flex-direction: column;
     justify-items: center;
@@ -621,23 +611,23 @@ main .h2index {
     padding: 10px;
 }
 
-.ceodetail > i , a{
+.ceodetail>i,a {
     text-decoration: none;
     color: black;
 }
 
-@media screen and (max-width:554px){
-    .ceo{
-        width: 100%;
+@media screen and (max-width: 554px) {
+    .ceo {
+        width: auto;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
     }
 }
 
-.sponsorsdiv{
+.sponsorsdiv {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -647,7 +637,8 @@ main .h2index {
     gap: 30px;
     margin: 15px;
 }
-.sponsor{
+
+.sponsor {
     background-color: rgb(230, 230, 230);
     width: 600px;
     display: flex;
@@ -659,15 +650,15 @@ main .h2index {
     padding: 25px;
 }
 
-.sponsor > img{
+.sponsor>img {
     width: 250px;
     border-radius: 20px;
-    border: solid 5px black;;
+    border: solid 5px black;
     padding: 10px;
     object-fit: cover;
 }
 
-.asideqsomos{
+.asideqsomos {
     grid-area: aside;
     display: flex;
     flex-direction: column;
@@ -677,37 +668,31 @@ main .h2index {
     margin-top: 30px;
 }
 
-.asideqsomos > img{
+.asideqsomos>img {
     width: 100%;
     height: 500px;
 }
 
-.footerqsomos{
+.footerqsomos {
     grid-area: footer;
 }
 
-
-/*                FIN  HTML Quienes Somos             */
-
-
-
-/* HTML CONTACTOS HTML CONTACTOS HTML CONTACTOS */
-
-.bodycontactos{
+.bodycontactos {
     display: grid;
-    grid-template-columns: repeat(3,minmax(300px,1fr));
+    grid-template-columns: repeat(3, minmax(300px, 1fr));
     grid-template-rows: auto 2fr 150px;
-    grid-template-areas: "header header header "
-                        "main main main "
-                        "aside aside aside"
-                        "footer footer footer"
+    grid-template-areas:
+        "header header header "
+        "main main main "
+        "aside aside aside"
+        "footer footer footer";
 }
 
-.headercontactos{
+.headercontactos {
     grid-area: header;
 }
 
-.maincontactos{
+.maincontactos {
     grid-area: main;
     display: flex;
     flex-direction: row;
@@ -716,18 +701,19 @@ main .h2index {
     align-items: center;
 }
 
-.contacto{
+.contacto {
     font-weight: bolder;
     font-size: 42px;
     padding: 10px;
     margin: 5px;
 }
-.contacto2{
+
+.contacto2 {
     margin: 5px;
     padding: 5px;
 }
 
-.formulario{
+.formulario {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -736,17 +722,19 @@ main .h2index {
     width: 700px;
     padding: 10px;
     margin: 50px;
-    background-image: linear-gradient(white,rgb(247, 250, 251),rgb(99, 158, 209));
+    background-image: linear-gradient(white, rgb(247, 250, 251), rgb(99, 158, 209));
     border-radius: 5px;
     border: solid black 1px;
     box-shadow: 3px 3px 3px 3px black;
 }
-.formulario > input, label{
+
+.formulario>input,label {
     margin: 5px;
     padding: 5px;
     font-weight: bold;
 }
-.btnform{
+
+.btnform {
     display: block;
     align-self: end;
     width: 95px;
@@ -758,14 +746,15 @@ main .h2index {
     color: black;
     font-weight: bold;
 }
-.btnform:hover{
+
+.btnform:hover {
     cursor: pointer;
     background-color: whitesmoke;
     color: black;
     font-weight: bolder;
 }
 
-.map{
+.map {
     width: fit-content;
     margin-left: 50px;
     display: flex;
@@ -790,47 +779,46 @@ main .h2index {
     border: 4px solid black;
     width: fit-content;
     box-shadow: 3px 3px 3px rgb(16, 16, 16);
-    background-image: linear-gradient(white,rgb(247, 250, 251),rgb(99, 158, 209));
+    background-image: linear-gradient(white, rgb(247, 250, 251), rgb(99, 158, 209));
 }
 
-#mapa{
+#mapa {
     margin: 10px;
     padding: 1px;
     border-radius: 5px;
     box-shadow: 2px 2px 2px 2px rgb(12, 12, 0);
 }
-.asidecontactos{
+
+.asidecontactos {
     grid-area: aside;
 }
-.reseñas{
+
+.reseñas {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     background-color: white;
-    font-size: 16px;
-    border: 1px solid black;;
+    font-size: 18px;
+    border: 1px solid black;
+    height: 150px;
 }
 
-.footercontactos{
+.footercontactos {
     grid-area: footer;
 }
 
-/*                FIN HTML CONTACTOS            */
-
-
-/* HTML FAQ  HTML FAQ   HTML FAQ   HTML FAQ */
-
-.navbar-brand{
+.navbar-brand {
     color: deepskyblue;
     font-size: 36px;
 }
-.navbar-toggler-icon{
+
+.navbar-toggler-icon {
     background-color: deepskyblue;
-    color: darkmagenta !important;
 }
-.divfaqmain{
+
+.divfaqmain {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -840,8 +828,7 @@ main .h2index {
     background-color: white;
 }
 
-
-.mainfaq{
+.mainfaq {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -849,48 +836,26 @@ main .h2index {
     background-color: white;
 }
 
-
-.mainfaq h1{
+.mainfaq h1 {
     font-weight: bolder;
     text-align: center;
     font-size: 36px;
     padding: 10px;
 }
 
-
-.mainfaq span{
+.mainfaq span {
     font-weight: bolder;
 }
 
-
-.asidefaq{
+.asidefaq {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     overflow: hidden;
 }
-.asidefaq > img{
+
+.asidefaq>img {
     width: 100%;
     height: 300px;
     object-fit: fill;
 }
-
-
-/*            FIN HTML FAQ            */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
