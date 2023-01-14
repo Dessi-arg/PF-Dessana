@@ -1,0 +1,116 @@
+.bodycontactos {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(300px, 1fr));
+    grid-template-rows: auto 2fr 150px;
+    grid-template-areas:
+        "header header header "
+        "main main main "
+        "asidec asidec asidec"
+        "footer footer footer";
+        .maincontactos {
+            grid-area: main;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            .contactoh1 {
+                font-weight: bolder;
+                font-size: 42px;
+                padding: 10px;
+                margin: 5px;
+            }
+            .contacto2 {
+                margin: 5px;
+                padding: 5px;
+                text-align: center;
+            }
+            .formulario {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                width: 700px;
+                padding: 10px;
+                margin: 50px;
+                background-image: linear-gradient(white, rgb(247, 250, 251), rgb(99, 158, 209));
+                border-radius: 5px;
+                border: solid black 1px;
+                box-shadow: 3px 3px 3px 3px black;
+                >input,label {
+                    margin: 5px;
+                    padding: 5px;
+                    font-weight: bold;
+                }
+                .btnform {
+                    display: block;
+                    align-self: end;
+                    width: 95px;
+                    margin: 15px;
+                    padding: 5px 10px;
+                    border-radius: 5px;
+                    background-color: lightblue;
+                    border: 1px solid black;
+                    color: black;
+                    font-weight: bold;
+                }
+                .btnform:hover {
+                    cursor: pointer;
+                    background-color: whitesmoke;
+                    color: black;
+                    font-weight: bolder;
+                }
+            }
+            .ubi {
+                width: fit-content;
+                margin-left: 50px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                padding: 10px;
+                margin: 50px;
+                gap: 50px;
+                .mapa {
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    align-items: center;
+                    color: black;
+                    font-weight: bold;
+                    padding: 15px;
+                    border-radius: 5px;
+                    border: 4px solid black;
+                    width: fit-content;
+                    box-shadow: 3px 3px 3px rgb(16, 16, 16);
+                    background-image: linear-gradient(white, rgb(247, 250, 251), rgb(99, 158, 209));
+                    #mapa {
+                        margin: 10px;
+                        padding: 1px;
+                        border-radius: 5px;
+                        box-shadow: 2px 2px 2px 2px rgb(12, 12, 0);
+                    }
+                }
+            }
+        }
+        .asidecontactos {
+            grid-area: asidec;
+            .reseñas {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                background-color: white;
+                font-size: 18px;
+                border: 1px solid black;
+                height: 150px;
+            }
+        }
+        
+        .footercontactos {
+            grid-area: footer;
+        }
+}

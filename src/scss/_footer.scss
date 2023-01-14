@@ -1,0 +1,49 @@
+footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    background: black;
+    height: 300px;
+    padding: 1px;
+    > .boxredes {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            background: black;
+            height: 150px;
+            padding: 10px;
+            border-radius: 5px;
+            color: white;
+            > .boxredes h2 {
+                margin: 10px;
+                color: white;
+                font-size: 24px;
+                text-align: center;
+            }
+            > a {
+                display: flex;
+                flex-direction: row;
+                justify-items: center;
+                margin-inline: 5px;
+                width: 45px;
+                height: 45px;
+            }
+    }
+    .copyright {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        background: rgb(99, 158, 209);
+        height: 150px;
+        padding: 10px;
+        color: white;
+        > h3 {
+            font-size: 20px;
+        }
+    }
+}

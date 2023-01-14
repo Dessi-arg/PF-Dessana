@@ -1,0 +1,73 @@
+.navbargf {
+    background-color: black;
+    color: deepskyblue;
+    height: 48px;
+    padding: 10px 12px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+        > .imgnav {
+            height: 48px;
+            padding: 2px;
+            width: 48px;
+        }
+        > .titulologo {
+            font-size: 36px;
+            padding: 5px;
+        }
+        > .checkbox,.iconos {
+            width: 24px;
+            height: 24px;
+            position: absolute;
+            top: 10px;
+            right: 12px;
+            cursor: pointer;
+        }
+        > .iconos {
+            pointer-events: none;
+            font-size: 24px;
+            color: deepskyblue;
+        }
+        
+        > .fi-br-cross {
+            display: none;
+        }
+        .checkbox {
+            opacity: 0;
+        } 
+        .checkbox:checked~.fi-br-menu-burger {
+            display: none;
+        }
+        
+        .checkbox:checked~.fi-br-cross {
+            display: block;
+        }
+        .checkbox:checked~.menugf {
+            display: block;
+            top: 48px;
+            z-index: 1;
+        }
+
+        .menugf {
+            border: 1px solid black;
+            width: 250px;
+            position: absolute;
+            top: -185px;
+            right: 0px;
+            z-index: -1;
+            transition: 250ms;
+            list-style: none;
+            >li a {
+                color: black;
+                background-color: deepskyblue;
+                text-decoration: none;
+                display: block;
+                padding: 12px;
+            }
+            >li a:hover {
+                background-color: black;
+                color: deepskyblue;
+            }
+        }
+}
