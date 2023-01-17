@@ -3,7 +3,7 @@ footer {
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
-    background: black;
+    background: $backcolor3;
     height: 300px;
     padding: 1px;
     > .boxredes {
@@ -12,14 +12,14 @@ footer {
             align-items: center;
             justify-content: center;
             width: 100%;
-            background: black;
+            background: $backcolor3;
             height: 150px;
             padding: 10px;
             border-radius: 5px;
-            color: white;
+            color: $backcolor;
             > .boxredes h2 {
                 margin: 10px;
-                color: white;
+                color: $backcolor;
                 font-size: 24px;
                 text-align: center;
             }
@@ -41,7 +41,7 @@ footer {
         background: rgb(99, 158, 209);
         height: 150px;
         padding: 10px;
-        color: white;
+        color: $backcolor;
         > h3 {
             font-size: 20px;
         }

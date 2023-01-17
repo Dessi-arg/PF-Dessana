@@ -1,3 +1,6 @@
+@import "variables";
+@import "extend";
+@import "mixins";
 @import "reset";
 @import "fonts";
 @import "navbar";
@@ -10,8 +13,9 @@
 @import "faq";
 @import "contactos";
 
+
 body{
-    background-color: rgb(230, 230, 230);
+    background-color: $backcolor;
     font-family: "Open Sans", sans-serif;
     display: grid;
     grid-template-columns: repeat(3, minmax(300px, 1fr));
@@ -21,11 +25,17 @@ body{
         "main main main "
         "aside aside aside"
         "footer footer footer";
+        header {
+            grid-area: header;
+        }
+        aside{
+            grid-area: aside;
+        }
+        footer{
+            grid-area: footer;
+        }
 }
-header {
-    grid-area: header;
-}
-aside{
-    grid-area: aside;
-}
+
+
+
 

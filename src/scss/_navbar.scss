@@ -1,6 +1,6 @@
 .navbargf {
-    background-color: black;
-    color: deepskyblue;
+    background-color: $backcolor3;
+    color: $backcolor2;
     height: 48px;
     padding: 10px 12px;
     position: relative;
@@ -27,7 +27,7 @@
         > .iconos {
             pointer-events: none;
             font-size: 24px;
-            color: deepskyblue;
+            color: $backcolor2;
         }
         
         > .fi-br-cross {
@@ -50,24 +50,24 @@
         }
 
         .menugf {
-            border: 1px solid black;
+            border: 1px solid $backcolor3;
             width: 250px;
             position: absolute;
-            top: -185px;
+            top: -195px;
             right: 0px;
             z-index: -1;
             transition: 250ms;
             list-style: none;
             >li a {
-                color: black;
-                background-color: deepskyblue;
+                color: $backcolor3;
+                background-color: $backcolor2;
                 text-decoration: none;
                 display: block;
                 padding: 12px;
             }
             >li a:hover {
-                background-color: black;
-                color: deepskyblue;
+                background-color: $backcolor3;
+                color: $backcolor2;
             }
         }
 }

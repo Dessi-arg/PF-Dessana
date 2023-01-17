@@ -1,7 +1,7 @@
 .indexbody {
     display: grid;
     grid-template-columns: repeat(3, minmax(300px, 1fr));
-    grid-template-rows: auto 2fr 800px;
+    grid-template-rows: auto 2fr 300px;
     grid-template-areas:
         "header header header "
         "main main main "
@@ -15,13 +15,20 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    background-color: rgb(230, 230, 230);
+    background-color: $backcolor;
+        .h1index {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            padding: 5px;
+            font-size: 36px;
+            border-radius: 5px;
+            font-weight: bolder;
+        }
         .h2index {
             margin-top: 10px;
             margin-bottom: 10px;
             padding: 5px;
             font-size: 36px;
-            color: black;
             border-radius: 5px;
             font-weight: bolder;
         }
@@ -43,7 +50,8 @@
                 flex-wrap: wrap;
                 justify-content: center;
                 align-items: center;
-                padding: 5px;
+                padding: 10px;
+                gap: 15px;
                 >img {
                     width: 250px;
                     height: 250px;
@@ -55,8 +63,8 @@
                 flex-wrap: wrap;
                 justify-content: center;
                 align-items: center;
-                width: 250px;
-                padding: 5px;
+                width: 100%;
+                padding: 10px;
                 >p {
                     width: 250px;
                     padding: 5px;
@@ -106,6 +114,19 @@
                 }
             }
         }
+        .bannerdiv{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 100%;
+            margin-right: 10px;
+            >img{
+                width: 100%;
+                height: 450px;
+                object-fit: fill;
+                overflow: hidden;
+            }
+        }
         .tarjetas {
             display: flex;
             flex-direction: row;
@@ -116,7 +137,7 @@
             padding: 10px;
             border-radius: 5px;
             margin: 10px;
-            color: white;
+            color: $backcolor;
             .tarjeta {
                 display: flex;
                 flex-direction: row;
@@ -144,7 +165,7 @@
                     border-style: solid;
                     border-width: 3px;
                     border-radius: 10px;
-                    background-color: white;
+                    background-color: rgb(230, 230, 230);
                     >h3 {
                         width: 250 px;
                         margin: 3 px;
@@ -172,17 +193,16 @@
 }
 .asideindex {
     grid-area: asideindex;
+    background-color: $backcolor3;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
     width: 100%;
-    height: 800px;
+    height: 400px;
     >img {
-        width: 100%;
-        height: 400px;
-        border-bottom: 1px solid white;
+        width: 50%;
+        height: 300px;
+        padding: 5px;
     }
-}
-.footerindex {
-    grid-area: footer;
 }

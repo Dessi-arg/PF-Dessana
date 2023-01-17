@@ -59,7 +59,7 @@
   border: 1px solid black;
   width: 250px;
   position: absolute;
-  top: -185px;
+  top: -195px;
   right: 0px;
   z-index: -1;
   transition: 250ms;
@@ -152,14 +152,14 @@ footer .copyright > h3 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 5px;
-  padding: 10px;
+  margin: 10px;
+  padding: 15px;
   width: 350px;
-  height: 350px;
+  height: 450px;
 }
 .tarjetaprod > .imgprod {
-  width: 250px;
-  height: 250px;
+  width: 300px;
+  height: 300px;
   -o-object-fit: contain;
      object-fit: contain;
   border-radius: 40px;
@@ -179,7 +179,7 @@ footer .copyright > h3 {
 .indexbody {
   display: grid;
   grid-template-columns: repeat(3, minmax(300px, 1fr));
-  grid-template-rows: auto 2fr 800px;
+  grid-template-rows: auto 2fr 300px;
   grid-template-areas: "header header header " "main main main " "asideindex asideindex asideindex" "footer footer footer";
 }
 
@@ -190,14 +190,13 @@ footer .copyright > h3 {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  background-color: rgb(230, 230, 230);
+  background-color: white;
 }
 .maindex .h2index {
   margin-top: 10px;
   margin-bottom: 10px;
   padding: 5px;
   font-size: 36px;
-  color: black;
   border-radius: 5px;
   font-weight: bolder;
 }
@@ -219,7 +218,8 @@ footer .copyright > h3 {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    padding: 5px;
+    padding: 10px;
+    gap: 15px;
   }
   .maindex .tarjeta > img {
     width: 250px;
@@ -231,8 +231,8 @@ footer .copyright > h3 {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    width: 250px;
-    padding: 5px;
+    width: 100%;
+    padding: 10px;
   }
   .maindex .tarjeta-info > p {
     width: 250px;
@@ -282,6 +282,20 @@ footer .copyright > h3 {
     align-items: center;
   }
 }
+.maindex .bannerdiv {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-right: 10px;
+}
+.maindex .bannerdiv > img {
+  width: 100%;
+  height: 450px;
+  -o-object-fit: fill;
+     object-fit: fill;
+  overflow: hidden;
+}
 .maindex .tarjetas {
   display: flex;
   flex-direction: row;
@@ -324,7 +338,7 @@ footer .copyright > h3 {
   border-style: solid;
   border-width: 3px;
   border-radius: 10px;
-  background-color: white;
+  background-color: rgb(230, 230, 230);
 }
 .maindex .tarjetas .tarjeta .tarjeta-info > h3 {
   width: 250 px;
@@ -350,25 +364,21 @@ footer .copyright > h3 {
 
 .asideindex {
   grid-area: asideindex;
+  background-color: black;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  width: 100%;
-  height: 800px;
-}
-.asideindex > img {
+  justify-content: center;
   width: 100%;
   height: 400px;
-  border-bottom: 1px solid white;
 }
-
-.footerindex {
-  grid-area: footer;
+.asideindex > img {
+  width: 50%;
+  height: 300px;
+  padding: 5px;
 }
 
 .bodyprod {
-  background-color: rgb(230, 230, 230);
-  font-family: "Open Sans", sans-serif;
   display: grid;
   grid-template-columns: repeat(3, minmax(300px, 1fr));
   grid-template-rows: auto 2fr 450px;
@@ -376,25 +386,24 @@ footer .copyright > h3 {
 }
 .bodyprod > .mainprod {
   grid-area: main;
-  background-color: white;
 }
 .bodyprod > .mainprod .tituloprod {
   width: 100%;
   height: 100px;
-  text-align: center;
+  align-items: center;
+  justify-content: center;
   font-weight: bold;
   font-size: 36px;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  padding: 10px;
 }
 .bodyprod > .mainprod .productospagina {
   display: flex;
   flex-wrap: wrap;
   gap: 15px;
-  margin: 10px;
+  margin: 25px;
   padding: 10px;
+  justify-content: center;
 }
 .bodyprod > .mainprod .btnnro {
   display: flex;
@@ -419,9 +428,6 @@ footer .copyright > h3 {
   width: 100%;
   height: 450px;
 }
-.bodyprod .footerprod {
-  grid-area: footer;
-}
 
 .bodyqsomos {
   display: grid;
@@ -429,12 +435,8 @@ footer .copyright > h3 {
   grid-template-rows: auto 2fr 550px;
   grid-template-areas: "header header header " "main main main " "aside aside aside" "footer footer footer";
 }
-.bodyqsomos .headerqsomos {
-  grid-area: header;
-}
 .bodyqsomos .mainqsomos {
   grid-area: main;
-  background-color: white;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -447,6 +449,7 @@ footer .copyright > h3 {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  width: 500px;
 }
 .bodyqsomos .mainqsomos > h1 {
   font-weight: bolder;
@@ -475,7 +478,7 @@ footer .copyright > h3 {
   font-weight: bolder;
   padding: 15px;
   margin: 5px;
-  width: auto;
+  width: 75%;
   margin-right: 20px;
 }
 .bodyqsomos .mainqsomos .fundador {
@@ -491,8 +494,8 @@ footer .copyright > h3 {
   flex-wrap: wrap;
   background-color: rgb(230, 230, 230);
   justify-content: center;
-  padding: 10px;
-  gap: 10px;
+  padding: 25px;
+  row-gap: 10px;
   margin: 10px;
   width: 500px;
   border-radius: 50px;
@@ -510,6 +513,7 @@ footer .copyright > h3 {
   align-items: center;
   width: 500px;
   padding: 10px;
+  gap: 10px;
 }
 .bodyqsomos .mainqsomos .ceo .ceodetail > i, .bodyqsomos .mainqsomos .ceo .ceodetail a {
   text-decoration: none;
@@ -532,8 +536,8 @@ footer .copyright > h3 {
   width: 100%;
   flex-wrap: wrap;
   padding: 15px;
-  gap: 30px;
-  margin: 15px;
+  gap: 50px;
+  margin: 30px;
 }
 .bodyqsomos .mainqsomos .sponsorsdiv .sponsor {
   background-color: rgb(230, 230, 230);
@@ -545,6 +549,7 @@ footer .copyright > h3 {
   border-radius: 50px;
   box-shadow: 0px 5px 10px black;
   padding: 25px;
+  gap: 15px;
 }
 .bodyqsomos .mainqsomos .sponsorsdiv .sponsor > img {
   width: 250px;
@@ -567,18 +572,16 @@ footer .copyright > h3 {
   width: 100%;
   height: 550px;
 }
-.bodyqsomos .footerqsomos {
-  grid-area: footer;
-}
 
 .mainfaq {
   grid-area: main;
+  background-image: url(/assets/img/faq.png);
+  background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
-  background-color: white;
 }
 .mainfaq > h1 {
   font-weight: bolder;
@@ -586,16 +589,13 @@ footer .copyright > h3 {
   font-size: 36px;
   padding: 10px;
 }
-.mainfaq > span {
-  font-weight: bolder;
-}
 .mainfaq .divfaqmain {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 50%;
   background-color: white;
 }
 
@@ -605,17 +605,7 @@ footer .copyright > h3 {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  overflow: hidden;
-}
-.asidefaq > img {
-  width: 100%;
-  height: 300px;
-  -o-object-fit: fill;
-     object-fit: fill;
-}
-
-.footerfaq {
-  grid-area: footer;
+  background-image: linear-gradient(rgb(253, 253, 253), lightblue, rgb(99, 158, 209));
 }
 
 .bodycontactos {
@@ -730,23 +720,21 @@ footer .copyright > h3 {
   border: 1px solid black;
   height: 150px;
 }
-.bodycontactos .footercontactos {
-  grid-area: footer;
-}
 
 body {
-  background-color: rgb(230, 230, 230);
+  background-color: white;
   font-family: "Open Sans", sans-serif;
   display: grid;
   grid-template-columns: repeat(3, minmax(300px, 1fr));
   grid-template-rows: auto 2fr 300px;
   grid-template-areas: "header header header " "main main main " "aside aside aside" "footer footer footer";
 }
-
-header {
+body header {
   grid-area: header;
 }
-
-aside {
+body aside {
   grid-area: aside;
+}
+body footer {
+  grid-area: footer;
 }/*# sourceMappingURL=style.css.map */

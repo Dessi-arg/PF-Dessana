@@ -1,0 +1,12 @@
+@mixin btn{
+        display: block;
+        text-align: center;
+        width: 95px;
+        margin: 10px;
+        padding: 5px 10px;
+        border-radius: 5px;
+        background-color: black;
+        border: 1px solid $backcolor3;
+        color: deepskyblue;
+}
+

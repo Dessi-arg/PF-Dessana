@@ -7,6 +7,7 @@
         "main main main "
         "asidec asidec asidec"
         "footer footer footer";
+        
         .maincontactos {
             grid-area: main;
             display: flex;
@@ -103,14 +104,10 @@
                 flex-wrap: wrap;
                 justify-content: center;
                 align-items: center;
-                background-color: white;
+                background-color: $backcolor;
                 font-size: 18px;
                 border: 1px solid black;
                 height: 150px;
             }
-        }
-        
-        .footercontactos {
-            grid-area: footer;
         }
 }
