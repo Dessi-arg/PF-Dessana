@@ -1,18 +1,12 @@
         .mainfaq {
             grid-area: main;
             background-image: url(/assets/img/faq.png);
-            background-size: cover;
+            background-size: contain;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             width: 100%;
-            >h1 {
-                font-weight: bolder;
-                text-align: center;
-                font-size: 36px;
-                padding: 10px;
-            }
             .divfaqmain {
                 display: flex;
                 flex-direction: row;
@@ -21,6 +15,23 @@
                 align-items: center;
                 width: 50%;
                 background-color: $backcolor;
+                >h1 {
+                    font-weight: bolder;
+                    text-align: center;
+                    font-size: 36px;
+                    padding: 10px;
+                }
+            }
+            .preguntasdiv{
+                
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                width: 50%;
+                gap: 10px;
+                padding: 15px;
             }
         }
         .asidefaq {

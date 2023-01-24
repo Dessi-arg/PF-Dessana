@@ -1,7 +1,7 @@
 .bodyqsomos {
     display: grid;
     grid-template-columns: repeat(3, minmax(300px, 1fr));
-    grid-template-rows: auto 2fr 550px;
+    grid-template-rows: auto 2fr 400px;
     grid-template-areas:
         "header header header "
         "main main main "
@@ -108,9 +108,9 @@
                 justify-content: center;
                 width: 100%;
                 flex-wrap: wrap;
-                padding: 15px;
+                padding: 30px;
                 gap: 50px;
-                margin: 30px;
+                margin-bottom: 35px;
                 .sponsor {
                     background-color: rgb(230, 230, 230);
                     width: 600px;
@@ -138,11 +138,11 @@
             flex-direction: column;
             flex-wrap: wrap;
             width: 100%;
-            height: 550px;
-            margin-top: 30px;
-            >img {
+            height: 400px;
+            >img{
                 width: 100%;
-                height: 550px;
+                height: 400px;
+                object-fit: cover;
             }
         }
 }

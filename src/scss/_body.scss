@@ -1,0 +1,21 @@
+body{
+    background-color: $backcolor;
+    font-family: "Open Sans", sans-serif;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(300px, 1fr));
+    grid-template-rows: auto 2fr 300px;
+    grid-template-areas:
+        "header header header "
+        "main main main "
+        "aside aside aside"
+        "footer footer footer";
+        header {
+            grid-area: header;
+        }
+        aside{
+            grid-area: aside;
+        }
+        footer{
+            grid-area: footer;
+        }
+}

@@ -29,6 +29,24 @@
                 margin: 25px;
                 padding: 10px;
                 justify-content: center;
+                .tarjetaprod{
+                    @extend %tarjetaprod;
+                    >.imgprod {
+                        width: 300px;
+                        height: 300px;
+                        object-fit: contain;
+                        border-radius: 40px;
+                        padding: 30px;
+                    }
+                }
+                .tarjetaprod:hover {
+                    cursor: pointer;
+                    box-shadow: 0 10px 20px black;
+                    overflow: hidden;
+                }
+                .tarjetaprod:hover img {
+                    transform: scale(1.2);
+                }
             }
             
         .btnnro {

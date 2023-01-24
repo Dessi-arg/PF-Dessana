@@ -1,40 +1,30 @@
-@import "variables";
-@import "extend";
-@import "mixins";
 @import "reset";
+
+@import "variables";
+
 @import "fonts";
+
+@import "body";
+
 @import "navbar";
+
 @import "footer";
-@import "btn";
-@import "tarjetaprod";
+
 @import "index";
+
 @import "productos";
+
 @import "qsomos";
+
 @import "faq";
+
 @import "contactos";
 
+@import "extend";
 
-body{
-    background-color: $backcolor;
-    font-family: "Open Sans", sans-serif;
-    display: grid;
-    grid-template-columns: repeat(3, minmax(300px, 1fr));
-    grid-template-rows: auto 2fr 300px;
-    grid-template-areas:
-        "header header header "
-        "main main main "
-        "aside aside aside"
-        "footer footer footer";
-        header {
-            grid-area: header;
-        }
-        aside{
-            grid-area: aside;
-        }
-        footer{
-            grid-area: footer;
-        }
-}
+@import "mixins";
+
+@import "btn";
 
 
 
