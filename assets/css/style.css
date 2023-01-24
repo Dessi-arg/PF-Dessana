@@ -311,6 +311,13 @@ footer .copyright > h3 {
   padding: 10px;
   justify-content: center;
 }
+.bodyprod > .mainprod .productospagina .tarjetaprod h5 {
+  font-size: 25px;
+  text-align: center;
+}
+.bodyprod > .mainprod .productospagina .tarjetaprod p {
+  font-size: 20px;
+}
 .bodyprod > .mainprod .productospagina .tarjetaprod > .imgprod {
   width: 300px;
   height: 300px;
@@ -661,6 +668,7 @@ footer .copyright > h3 {
   align-items: center;
   margin: 10px;
   padding: 15px;
+  gap: 15px;
   width: 350px;
   height: 450px;
 }

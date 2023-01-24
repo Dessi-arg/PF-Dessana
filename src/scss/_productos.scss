@@ -31,6 +31,13 @@
                 justify-content: center;
                 .tarjetaprod{
                     @extend %tarjetaprod;
+                    h5{
+                        font-size: 25px;
+                        text-align: center;
+                    }
+                    p{
+                        font-size: 20px;
+                    }
                     >.imgprod {
                         width: 300px;
                         height: 300px;
@@ -68,6 +75,7 @@
             }
         }
         }
+        
         .asideprod{
             grid-area: asidep;
             width: 100%;
